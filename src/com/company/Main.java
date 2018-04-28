@@ -9,7 +9,7 @@ public class Main {
         BADWORDS.put("лось","лесное рогатое животное");
         BADWORDS.put("редиска","нехороший человек");
 
-        System.out.println(replaceBadWord("Эй,ты,лось, как дела? Или ты просто редиска?Да, " +
+        System.out.println(replaceBadWord("Эй,ты,лось, как дела лось? Или ты просто редиска?Да, " +
                 "скорее всего ты лось и редиска одновременно.", BADWORDS));
 
 
