@@ -35,6 +35,6 @@ public class Main {
         for (String aWord:allWords ) {
             str = str.replaceAll(aWord,badwords.get(aWord)==null?aWord:badwords.get(aWord));
         }
-        return str;
+        return str; //todo something
     }
 }
