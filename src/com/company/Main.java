@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         final Map<String, String> BADWORDS = new HashMap<>();
-        BADWORDS.put("лось","лесное рогатое животное");
+        BADWORDS.put("лось","лесное парнокопытное");
         BADWORDS.put("редиска","нехороший человек");
 
         System.out.println(replaceBadWord("Эй,ты,лось, как дела лось? Или ты просто редиска?Да, " +
@@ -33,7 +33,7 @@ public class Main {
              word += Character.toString(str.charAt(i));
         }
         for (String aWord:allWords ) {
-            str = str.replaceAll(aWord,badwords.get(aWord)==null?aWord:badwords.get(aWord));
+            str = str.replaceAll(aWord,badwords.get(aWord)==null?aWord:badwords.get(aWord).toUpperCase());
         }
         return str; //todo something and and
     }
